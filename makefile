@@ -1,9 +1,9 @@
 
-BIN_LIB=CMPSYS
+BIN_LIB=MCAWSYS2
 LIBLIST=$(BIN_LIB)
 SHELL=/QOpenSys/usr/bin/qsh
 
-all: depts.sqlrpgle employees.sqlrpgle
+all: depts.sqlrpgle employees.sqlrpgle hello.sqlrpgle
 
 depts.sqlrpgle: depts.dspf
 employees.sqlrpgle: emps.dspf

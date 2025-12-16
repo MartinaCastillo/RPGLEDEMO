@@ -7,8 +7,7 @@
 
       //---------------------------------------------------------------*
 
-      /include 'constants.rpgleinc'
-
+      /include '/home/MCAWSYS/rpgledemo/QRPGLEREF/constants.rpgle'
 
 
       //---------------------------------------------------------------*
@@ -50,7 +49,7 @@
       *
           Dcl-S Index Int(5);
 
-          Dcl-Ds Department ExtName('DEPARTMENT') Alias Qualified;
+          Dcl-Ds Department ExtName('MCAWSYS2/DEPARTMENT') Alias Qualified;
           End-Ds;
 
           
@@ -96,7 +95,7 @@
 
             EXEC SQL DECLARE deptCur CURSOR FOR
               SELECT DEPTNO, DEPTNAME
-              FROM SAMPLE.DEPARTMENT;
+              FROM MCAWSYS2.DEPARTMENT;
 
             EXEC SQL OPEN deptCur;
 
